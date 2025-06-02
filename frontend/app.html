@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in to GitHub</title>
+  <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d1117;
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: #c9d1d9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      transform: scale(0.8);
+      transition: transform 0.2s ease;
+    }
+
+    .logo:hover {
+      transform: scale(0.9);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .login-container {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 20px;
+      width: 308px;
+    }
+
+    .label-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+
+    .label-row label {
+      font-size: 14px;
+    }
+
+    .label-row a {
+      font-size: 12px;
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .label-row a:hover {
+      text-decoration: underline;
+      color: #79c0ff;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 6px 8px;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin-top: 4px;
+      margin-bottom: 15px;
+      font-size: 14px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #58a6ff;
+      outline: none;
+      box-shadow: 0 0 0 1px #58a6ff;
+    }
+
+    .signin-btn {
+      width: 100%;
+      padding: 6px 12px;
+      background-color: #238636;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .signin-btn:hover {
+      background-color: #2ea043;
+    }
+
+    .alt-signin {
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 16px;
+      margin-top: 15px;
+      width: 308px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .alt-signin a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .alt-signin a:hover {
+      text-decoration: underline;
+      color: #79c0ff;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer a {
+      color: #b2babb !important;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+      color: #79c0ff !important;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="GitHub Logo" class="logo" />
+  <h1>Sign in to GitHub</h1>
+
+  <div class="login-container">
+    <form>
+      <label for="username">Username or email address</label>
+      <input type="text" id="username" required />
+
+      <div class="label-row">
+        <label for="password">Password</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <input type="password" id="password" required />
+
+      <button class="signin-btn" type="submit">Sign in</button>
+    </form>
+  </div>
+
+  <div class="alt-signin">
+    <div><a href="#"><strong>Sign in with a passkey</strong></a></div>
+    <div style="margin-top: 10px;">New to GitHub? <a href="#">Create an account</a></div>
+  </div>
+
+  <div class="footer">
+    <p>
+      <a href="#">Terms</a><a>&nbsp;&nbsp;</a>
+      <a href="#">Privacy</a><a>&nbsp;&nbsp;</a> 
+      <a href="#">Docs</a><a>&nbsp;&nbsp;</a>  
+      <a href="#">Contact GitHub Support</a><a>&nbsp;&nbsp;</a>  
+      <a href="#">Manage cookies</a><a>&nbsp;&nbsp;</a> 
+      <a href="#">Do not share my personal information</a>
+    </p>
+  </div>
+</body>
+</html>
