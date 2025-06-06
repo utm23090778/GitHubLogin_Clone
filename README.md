@@ -1,8 +1,8 @@
 # 🚀 GitHub Login Clone
 
-- **Author:**francisco javier luna reyes.
-- **ln:**https://www.linkedin.com/in/francisco-javier-luna-reyes-00076b366/
-- **github:**https://github.com/utm23090778/
+- Author: francisco javier luna reyes.
+- ln: https://www.linkedin.com/in/francisco-javier-luna-reyes-00076b366/
+- github: https://github.com/utm23090778/
 
 ## See Live Demo ##
 - [ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
